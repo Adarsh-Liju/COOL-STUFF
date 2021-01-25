@@ -3,7 +3,7 @@ alp=['a','b','c','d','e','f','g','h','i','j','k','l','m','o','p','q','r','s','t'
 num=[1,2,3,4,5,6,7,8,9]
 spe_ch=['!','@','#','$','%','^','&','*','(',')','+']
 count=0
-pword=str(0)
+pword=""
 while(count<3):
     for i in alp,num,spe_ch:
         pa1=str(r.choice(alp))
