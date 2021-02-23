@@ -11,5 +11,5 @@ while(count<3):
         pa3=str(r.choice(spe_ch))
         pword=pword+pa1+pa2+pa3
     count=count+1
-print("HELLO")
+print("HELLO WORLD")
 print("Random Password is : ",pword)
