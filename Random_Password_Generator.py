@@ -13,3 +13,4 @@ while(count<3):
     count=count+1
 print("HELLO WORLD")
 print("Random Password is : ",pword)
+print("Go away")
