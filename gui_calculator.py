@@ -53,6 +53,8 @@ def exponent():
      math = "exponent"
      f_num = int(f_n)
      e.delete(0,END)
+def squareroot():
+     
 
 def equal():
      s_num = int(e.get())
