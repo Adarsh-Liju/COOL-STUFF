@@ -10,6 +10,7 @@ def click(number):
      current = e.get()
      e.delete(0,END)
      e.insert(0, str(current) + str(number))
+     
 
 def clear():
      e.delete(0,END)
@@ -19,6 +20,14 @@ def add():
      global f_num
      global math
      math = "addition"
+     f_num = int(f_n)
+     e.delete(0,END)
+
+def squareroot():
+     f_n = e.get()
+     global f_num
+     global math
+     math = "squareroot"
      f_num = int(f_n)
      e.delete(0,END)
 
@@ -55,18 +64,32 @@ def exponent():
      e.delete(0,END)
 
 def equal():
-     s_num = int(e.get())
-     e.delete(0, END)
+     s_num=0
+
      if math == "addition":
-          e.insert(0 , f_num + s_num)
+          s_num = int(e.get())
+          e.delete(0, END)
+          e.insert(0 , "ADDITION RESULT :" + str(f_num + s_num))
      elif math == "subtraction":
-          e.insert(0 , f_num - s_num)
+          s_num = int(e.get())
+          e.delete(0, END)
+          e.insert(0 ,"SUBTRACTION  RESULT :" +str(f_num - s_num))
      elif math == "multiplication":
-          e.insert(0 , f_num * s_num)
+          s_num = int(e.get())
+          e.delete(0, END)
+          e.insert(0 , "MULTIPLICATION RESULT :" +str(f_num * s_num))
      elif math == "division":
+          s_num = int(e.get())
+          e.delete(0, END)
+          e.insert(0 , "DIVISION RESULT :" +str(f_num ** s_num))
           e.insert(0 , f_num / s_num)
      elif math == "exponent":
-          e.insert(0 , f_num ** s_num)
+          s_num = int(e.get())
+          e.delete(0, END)
+          e.insert(0 , "EXPONENT IS : " +str(f_num ** s_num))
+     elif math == "squareroot":
+          e.delete(0, END)
+          e.insert(0,"SQRT IS :" + str(f_num ** 1/2))
 
 #define buttons
 bt1 = Button(root, text = "1", padx = 40 , pady = 20, command = lambda : click(1))#callback
@@ -87,6 +110,7 @@ btexponent=Button(root, text = "^", padx = 41 , pady = 20, command =exponent)#ca
 
 btEquals = Button(root,bg = "blue",fg = "white", text = "=", padx = 90 , pady = 20, command = equal)#callback
 btClear = Button(root,bg = "red",fg = "white",text = "Clear", padx = 79 , pady = 20, command = clear)#callback
+btsqrt = Button(root,text = "Sqrt", padx = 79 , pady = 20, command = squareroot)#callback
 
 bt1.grid(row = 3, column = 0)
 bt2.grid(row = 3, column = 1)
@@ -104,10 +128,14 @@ bt0.grid(row = 4, column = 0 )
 btadd.grid(row = 5, column = 0 )
 btEquals.grid(row = 5, column = 1, columnspan = 2)
 btClear.grid(row = 4, column = 1, columnspan = 2)
+btsqrt.grid(row = 8, column = 1, columnspan = 2)
 btsub.grid(row = 6, column = 0 )
 btmul.grid(row = 6, column = 1 )
 btdiv.grid(row = 6, column = 2 )
 btexponent.grid(row = 6, column = 2)
 root.mainloop()
+
+
+
 
 
