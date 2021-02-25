@@ -46,14 +46,6 @@ def div():
      f_num = int(f_n)
      e.delete(0,END)
 
-def square_root():
-     f_n = e.get()
-     global f_num
-     global math
-     math = "squareroot"
-     f_num = int(f_n)
-     e.delete(0,END)
-
 def exponent():
      f_n = e.get()
      global f_num
@@ -61,6 +53,8 @@ def exponent():
      math = "exponent"
      f_num = int(f_n)
      e.delete(0,END)
+def squareroot():
+     
 
 def equal():
      s_num = int(e.get())
