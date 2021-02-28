@@ -1,1 +1,3 @@
 echo $PATH
+echo $USERNAME
+echo HELLO WORLD
