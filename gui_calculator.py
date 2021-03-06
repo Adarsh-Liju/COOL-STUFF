@@ -1,4 +1,4 @@
-from tkinter import *
+from Tkinter import *
 #Look at this awesome code created by Adarsh!
 #creating buttons
 root = Tk() #creates a window
