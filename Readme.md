@@ -6,7 +6,7 @@ Feel free to comment! and point out errors__
 
 ---
 
-__I have added my projects__
+__I have added my COLLEGE projects__
 
 ---
 
