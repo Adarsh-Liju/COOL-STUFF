@@ -32,6 +32,11 @@ Plug 'vim-airline/vim-airline-themes'
 
 Plug 'w0rp/ale'
 
+"markdown preview
+
+Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown'}
+
 " Initialize plugin system
  call plug#end()
 
+colorscheme sonokai
