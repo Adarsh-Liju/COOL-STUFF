@@ -36,6 +36,10 @@ Plug 'w0rp/ale'
 
 Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown'}
 
+
+Plug 'nvim-lua/completion-nvim'
+
+
 " Initialize plugin system
  call plug#end()
 
