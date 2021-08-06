@@ -39,8 +39,10 @@ Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown'}
 
 Plug 'nvim-lua/completion-nvim'
 
+" Dracula Theme
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 " Initialize plugin system
  call plug#end()
 
-colorscheme sonokai
+colorscheme dracula
